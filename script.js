@@ -16,8 +16,8 @@ function handleBirthdayResponse(isBirthday) {
     const birthday = new Date(today.getFullYear(), 6, 6); // July 6
     const responseElement = document.getElementById('birthdayResponse');
     const isTodayBirthday = today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate();
-    const bday = document.getElementById('bday');
-    //bday.play();
+    const bday = document.getElementById('cameraSound');
+    bday.play();
     
     if (isBirthday) {
         if (isTodayBirthday) {
