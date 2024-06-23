@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #ff7eb9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff4d6d;
+}
+
+#message, #birthdayQuestion, #birthdayResponse, #sigh, #jobMessage {
+    font-size: 2em;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s forwards;
+}
+
+.hidden {
+    display: none;
+}
+@keyframes flash {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.flash-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+    animation: flash 0.3s;
+    z-index: 9999; 
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes sighAnimation {
+    0% { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(1); opacity: 0; }
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello!</h1>
+        <button id="revealMessageButton">Click for a Surprise!</button>
+        <div id="birthdayQuestion" class="hidden">
+            <p>Wait, is today your birthday?</p>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
+        <p id="birthdayResponse" class="hidden"></p>
+        <p id="message" class="hidden">Wishing you all the best on your special day!</p>
+        <canvas id="canvas"></canvas>
+        <p id="sigh" class="hidden">*sigh*</p>
+        <p id="jobMessage" class="hidden">This is part of the job I was talking about.</p>
+        <p id="caughtSmilingMessage" class="hidden">Caught you smiling! 📸</p>
+        <audio id="bday">
+        <source src="bday.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="cameraSound">
+        <source src="camera-shutter.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
