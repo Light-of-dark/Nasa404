@@ -18,7 +18,8 @@ function handleBirthdayResponse(isBirthday) {
     const isTodayBirthday = today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate();
     const bday = document.getElementById('bday');
     bday.play();
-    playCameraSound()
+    const cameraSound = document.getElementById('cameraSound');
+    cameraSound.currentTime = 0;
     if (isBirthday) {
         if (isTodayBirthday) {
             responseElement.textContent = "Happy bday Amal!";
