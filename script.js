@@ -18,8 +18,7 @@ function handleBirthdayResponse(isBirthday) {
     const isTodayBirthday = today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate();
     const bday = document.getElementById('bday');
     bday.play();
-    const cameraSound = document.getElementById('cameraSound');
-    cameraSound.currentTime = 0;
+    playCameraSound()
     if (isBirthday) {
         if (isTodayBirthday) {
             responseElement.textContent = "Happy bday Amal!";
@@ -107,10 +106,14 @@ function flashEffect() {
 
 function playCameraSound() {
     const cameraSound = document.getElementById('cameraSound');
-    cameraSound.currentTime = 0;  // Rewind to the start in case it was played before
-    cameraSound.play().catch(error => {
-        console.error('Failed to play camera sound:', error);
-    });
+    const boo = true
+    if cameraSound.currentTime!==0:
+        cameraSound.currentTime = 0
+        boo = false
+    cameraSound.play()
+    if boo:
+        cameraSound.currentTime = 3
+    
 }
 
 
