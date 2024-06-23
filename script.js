@@ -108,14 +108,14 @@ function playCameraSound() {
     let boo = true;
 
     if (cameraSound.currentTime !== 0) {
-        cameraSound.currentTime = 0;
+        cameraSound.currentTime = 2;
         boo = false;
     }
 
     cameraSound.play();
 
     if (boo) {
-        cameraSound.currentTime = 3;  // Ensure 3 seconds is within the audio's length
+        cameraSound.currentTime = 2.9;  // Ensure 3 seconds is within the audio's length
     }
 }
 
