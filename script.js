@@ -1,13 +1,13 @@
-document.getElementById('revealMessageButton').addEventListener('mouseover', function() {
+document.getElementById('revealMessageButton').addEventListener('touchstart', function() {
     document.getElementById('revealMessageButton').classList.add('hidden');
     document.getElementById('birthdayQuestion').classList.remove('hidden');
 });
 
-document.getElementById('yesButton').addEventListener('mouseover', function() {
+document.getElementById('yesButton').addEventListener('touchstart', function() {
     handleBirthdayResponse(true);
 });
 
-document.getElementById('noButton').addEventListener('mouseover', function() {
+document.getElementById('noButton').addEventListener('touchstart', function() {
     handleBirthdayResponse(false);
 });
 
