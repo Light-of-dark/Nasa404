@@ -106,7 +106,10 @@ function flashEffect() {
 
 function playCameraSound() {
     const cameraSound = document.getElementById('cameraSound');
-    cameraSound.play();
+    cameraSound.currentTime = 0;  // Rewind to the start in case it was played before
+    cameraSound.play().catch(error => {
+        console.error('Failed to play camera sound:', error);
+    });
 }
 
 
