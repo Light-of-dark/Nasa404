@@ -17,7 +17,7 @@ function handleBirthdayResponse(isBirthday) {
     const responseElement = document.getElementById('birthdayResponse');
     const isTodayBirthday = today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate();
     const bday = document.getElementById('bday');
-    bday.play();
+    //bday.play();
     
     if (isBirthday) {
         if (isTodayBirthday) {
