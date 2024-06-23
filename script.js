@@ -103,17 +103,20 @@ function flashEffect() {
     }, 300); 
 }
 
-
 function playCameraSound() {
     const cameraSound = document.getElementById('cameraSound');
-    const boo = true
-    if cameraSound.currentTime!==0:
-        cameraSound.currentTime = 0
-        boo = false
-    cameraSound.play()
-    if boo:
-        cameraSound.currentTime = 3
-    
+    let boo = true;
+
+    if (cameraSound.currentTime !== 0) {
+        cameraSound.currentTime = 0;
+        boo = false;
+    }
+
+    cameraSound.play();
+
+    if (boo) {
+        cameraSound.currentTime = 3;  // Ensure 3 seconds is within the audio's length
+    }
 }
 
 
