@@ -21,13 +21,13 @@ function handleBirthdayResponse(isBirthday) {
     playCameraSound()
     if (isBirthday) {
         if (isTodayBirthday) {
-            responseElement.textContent = "Happy bday Amal!";
+            responseElement.textContent = "Happy bdayyy Amal!";
         } else {
             responseElement.textContent = "Why are you still here? Shoo, birthday over!";
         }
     } else {
         if (isTodayBirthday) {
-            responseElement.textContent = "Nah, I know it's your birthday!";
+            responseElement.textContent = "Nah, I know it's your birthday, Happy Birthdayy";
         } else {
             responseElement.textContent = "Good. Honesty is the best policy";
         }
@@ -86,7 +86,7 @@ function clearMessages() {
         helloHeader.remove(); 
     }
     const finalMessage = document.createElement('p');
-    finalMessage.textContent = "Enjoying the day? 👀";
+    finalMessage.textContent = "Enjoying the day? 👀 (that's it you can quit)";
     finalMessage.classList.add('final-message');
     finalMessage.style.fontSize = '4em'
     document.body.appendChild(finalMessage);
