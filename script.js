@@ -27,7 +27,7 @@ function handleBirthdayResponse(isBirthday) {
         }
     } else {
         if (isTodayBirthday) {
-            responseElement.textContent = "Nah, I know it's your birthday, Happy Birthdayy";
+            responseElement.textContent = "Nah, I know it's your birthday, Happy Birthdayy Amal";
         } else {
             responseElement.textContent = "Good. Honesty is the best policy";
         }
@@ -86,7 +86,7 @@ function clearMessages() {
         helloHeader.remove(); 
     }
     const finalMessage = document.createElement('p');
-    finalMessage.textContent = "Enjoying the day? 👀 (that's it you can quit)";
+    finalMessage.textContent = "Enjoy the day 👀 (that's it you can quit)";
     finalMessage.classList.add('final-message');
     finalMessage.style.fontSize = '4em'
     document.body.appendChild(finalMessage);
