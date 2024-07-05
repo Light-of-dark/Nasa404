@@ -17,6 +17,7 @@ function handleBirthdayResponse(isBirthday) {
     const responseElement = document.getElementById('birthdayResponse');
     const isTodayBirthday = today.getMonth() === birthday.getMonth() && today.getDate() === birthday.getDate();
     const bday = document.getElementById('bday');
+    document.body.style.background = 'linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)';
     bday.play();
     playCameraSound()
     if (isBirthday) {
