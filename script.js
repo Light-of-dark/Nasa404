@@ -22,13 +22,13 @@ function handleBirthdayResponse(isBirthday) {
     playCameraSound()
     if (isBirthday) {
         if (isTodayBirthday) {
-            responseElement.textContent = "Happy bdayyy Amal!";
+            responseElement.textContent = "Happy bdayyy!";
         } else {
             responseElement.textContent = "Why are you still here? Shoo, birthday over!";
         }
     } else {
         if (isTodayBirthday) {
-            responseElement.textContent = "Nah, I know it's your birthday, Happy Birthdayy Amal";
+            responseElement.textContent = "Nah, I know it's your birthday, Happy Birthdayy";
         } else {
             responseElement.textContent = "Good. Honesty is the best policy";
         }
